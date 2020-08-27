@@ -10,7 +10,7 @@ repo init -u https://coral.googlesource.com/manifest
 repo sync -j$(nproc)
 
 cd linux-imx
-patch -p1 <  ../../0001-849b2e3ff9698226ab91e034d52cbb1da92a5b4c.patch
+patch -p1 <  ../../0001-st7701-driver.patch
 cd ..
 
 source build/setup.sh
