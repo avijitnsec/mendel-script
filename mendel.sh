@@ -10,7 +10,8 @@ repo init -u https://coral.googlesource.com/manifest
 repo sync -j$(nproc)
 
 cd linux-imx
-patch -p1 <  ../../0001-st7701-driver.patch
+# patch -p1 <  ../../0001-st7701-driver.patch
+patch -p1 <  ../../0001-sitronix-st7701-driver-integration.patch
 cd ..
 
 source build/setup.sh
